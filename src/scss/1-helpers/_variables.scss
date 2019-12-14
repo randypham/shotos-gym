@@ -1,0 +1,36 @@
+// Colors
+$candy-apple-red: #d90429;
+$red: #ef233c;
+$gunmetal: #2b2d42;
+$gray-blue: #8d99ae;
+$anti-flash-white: #edf2f4;
+
+$black: #111;
+$white: #fff;
+$gray: #777;
+$gray-light: #ccc;
+$gray-dark: #444;
+
+$light-color: #f7f7f7;
+$dark-color: #222;
+
+$primary-color: $candy-apple-red;
+$secondary-color: $gunmetal;
+
+$text-color: $gray;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Catamaran&display=swap');
+
+$font-sans-serif: 'Catamaran', verdana, sans-serif;
+$font-serif: sans-serif;
+$font-size: 16px;
+
+// Animation
+$transition-speed-normal: 0.25s;
+
+// Media Query Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

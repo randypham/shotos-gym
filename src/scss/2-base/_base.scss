@@ -30,7 +30,9 @@ p {
 }
 
 a {
+  color: $primary-color;
   cursor: pointer;
+  text-decoration: none;
 }
 
 ul,

@@ -1,0 +1,49 @@
+.footer {
+  background-color: $light-color;
+  padding: 3rem 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    @include bp-sm {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      text-align: left;
+    }
+    @include bp-md {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .title {
+    color: $gray-dark;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .list {
+    list-style: none;
+
+    &-item {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .link {
+    color: $text-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .copyright-text {
+    text-align: center;
+  }
+}

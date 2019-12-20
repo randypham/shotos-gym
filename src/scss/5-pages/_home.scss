@@ -1,0 +1,21 @@
+.hero {
+  background-color: $gray-light;
+  height: 100vh;
+  display: flex;
+
+  .container {
+    margin: auto;
+  }
+
+  &-title {
+    color: $black;
+    font-size: 2rem;
+    text-align: center;
+    @include bp-sm {
+      font-size: 3rem;
+    }
+    @include bp-md {
+      font-size: 4rem;
+    }
+  }
+}

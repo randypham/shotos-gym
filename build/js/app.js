@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var headerNav=document.querySelector("#header-nav"),headerNavBtn=document.querySelector("#header-nav-btn");function toggleNav(){headerNav.classList.toggle("active")}headerNavBtn.addEventListener("click",toggleNav);

@@ -3,7 +3,12 @@
   padding: 1.25rem 0;
   position: fixed;
   width: 100%;
+  transition: background-color $transition-speed;
+  &.scrolled {
+    background-color: $black;
+  }
   @include bp-md {
+    background-color: transparent;
     padding: 1.75rem 0;
   }
 
@@ -50,7 +55,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
-    transition: $transition-speed;
+    transition: color $transition-speed;
     &:hover {
       color: $primary-color;
     }

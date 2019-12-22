@@ -1,0 +1,36 @@
+.hero {
+  background-color: $black;
+  background-image: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)),
+    url('../img/hero-sm.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  @include bp-md {
+    background-image: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)),
+      url('../img/hero-md.jpg');
+  }
+  @include bp-lg {
+    background-image: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)),
+      url('../img/hero-lg.jpg');
+  }
+
+  .container {
+    margin: auto;
+  }
+
+  &-title {
+    color: $white;
+    font-size: 3rem;
+    letter-spacing: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    @include bp-sm {
+      font-size: 4rem;
+    }
+    @include bp-md {
+      font-size: 5rem;
+    }
+  }
+}

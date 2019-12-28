@@ -1,0 +1,55 @@
+.membership {
+  .grid.intro {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+    @include bp-md {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include bp-md {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .grid.plans {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    @include bp-md {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+    }
+  }
+
+  .free-pass-form {
+    @include bp-md {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .form-group.name {
+        width: 100%;
+      }
+
+      .form-group.email,
+      .form-group.phone {
+        width: 49%;
+      }
+
+      .btn {
+        margin: auto;
+      }
+    }
+  }
+}

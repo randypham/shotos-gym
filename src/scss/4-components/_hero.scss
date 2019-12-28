@@ -5,10 +5,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: calc(100vh - 58px);
   display: flex;
   text-align: center;
   @include bp-md {
+    height: 100vh;
     background-image: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)),
       url('../img/hero-md.jpg');
   }
@@ -41,6 +42,16 @@
     }
     @include bp-md {
       font-size: 5rem;
+    }
+
+    &.small {
+      font-size: 2rem;
+      @include bp-sm {
+        font-size: 3rem;
+      }
+      @include bp-md {
+        font-size: 4rem;
+      }
     }
   }
 

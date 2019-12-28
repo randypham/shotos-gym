@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>About - Shoto's Gym</title>
+    <title>Membership - Shoto's Gym</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -27,62 +27,112 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content about">
+    <main class="main-content membership">
       <!-- Hero -->
       <section class="hero small">
         <div class="container">
-          <h1 class="hero-title small">About</h1>
+          <h1 class="hero-title small">Membership</h1>
         </div>
       </section>
 
-      <!-- Who We Are -->
+      <!-- Membership Plans -->
       <section class="section">
         <div class="container">
-          <div class="grid">
-            <div class="grid-item text">
-              <h2>Who We Are</h2>
+          <div class="grid intro">
+            <div class="grid-item">
+              <h2>Our Plans</h2>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci dolorum autem labore necessitatibus dolores ad, quia
-                magnam nam voluptates impedit, velit natus facere non, molestias
-                sint accusamus nisi nemo nesciunt provident! Facilis quasi
-                repellendus in cumque. Sapiente nesciunt alias corporis!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+                temporibus vitae dolores voluptatum debitis fugit consequuntur
+                autem nostrum tempora veniam repudiandae, ad necessitatib ut
+                mollitia fugiat officiis ab ratione dolorum eligendi.
               </p>
             </div>
-            <div class="grid-item photo">
-              <img src="./img/battle-ropes.jpg" alt="Battle rope exercise" />
+            <div class="grid-item">
+              <img src="./img/rower.jpg" alt="Rowing Machine" />
+            </div>
+          </div>
+          <div class="grid plans">
+            <div class="grid-item">
+              <div class="card">
+                <h3 class="card-heading">Rookie</h3>
+                <div class="card-content">
+                  <h4>$20</h4>
+                  <p>per month</p>
+                </div>
+                <ul class="card-list">
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>-</li>
+                  <li>-</li>
+                  <li>-</li>
+                  <li>-</li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <h3 class="card-heading">Pro</h3>
+                <div class="card-content">
+                  <h4>$30</h4>
+                  <p>per month</p>
+                </div>
+                <ul class="card-list">
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>-</li>
+                  <li>-</li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="card">
+                <h3 class="card-heading">Elite</h3>
+                <div class="card-content">
+                  <h4>$40</h4>
+                  <p>per month</p>
+                </div>
+                <ul class="card-list">
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem, ipsum.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Lorem, ipsum dolor.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem dolor sit amet adipisicing.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Amenities -->
+      <!-- Free Week Pass -->
       <section class="section">
-        <div class="container">
-          <div class="grid">
-            <div class="grid-item">
-              <img src="./img/bb-split-squat.jpg" alt="Barbell Split Squat" />
+        <div class="container text-center">
+          <h2>Free Week Pass</h2>
+          <p>Fill out our form to receive a free week pass!</p>
+          <form action="#" method="POST" class="free-pass-form" id="free-pass-form">
+            <div class="form-group name">
+              <input type="text" name="free-pass-name" id="free-pass-name" class="form-control" placeholder="Enter Name" required>
             </div>
-            <div class="grid-item">
-              <h2>Our Amenities</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                aliquam suscipit maiores ipsum consectetur nostrum dicta fugiat
-                sequi est esse.
-              </p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit.</li>
-              </ul>
+            <div class="form-group email">
+              <input type="text" name="free-pass-email" id="free-pass-email" class="form-control" placeholder="Enter Email" required>
             </div>
-          </div>
+            <div class="form-group phone">
+              <input type="text" name="free-pass-phone" id="free-pass-phone" class="form-control" placeholder="Enter Phone" required>
+            </div>
+            <button type="submit" class="btn">Get Free Pass</button>
+          </form>
         </div>
-      </section>
+      </sectiion>
     </main>
 
     <!-- Footer -->

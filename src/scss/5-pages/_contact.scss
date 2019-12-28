@@ -1,0 +1,10 @@
+.contact {
+  .contact-cards {
+    display: grid;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+    @include bp-md {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

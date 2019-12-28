@@ -39,6 +39,7 @@
 
   .link {
     color: $text-color;
+    transition: color $transition-speed;
     &:hover {
       color: $primary-color;
     }

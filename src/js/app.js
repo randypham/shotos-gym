@@ -1,4 +1,5 @@
-/* Mobile Navigation Toggle  */
+/* =============== MOBILE NAVIGATION TOGGLE =============== */
+
 const headerNav = document.querySelector('#header-nav');
 const headerNavBtn = document.querySelector('#header-nav-btn');
 
@@ -8,7 +9,8 @@ function toggleNav() {
 
 headerNavBtn.addEventListener('click', toggleNav);
 
-/* Header Background Scroll Change */
+/* =============== HEADER BACKGROUND SCROLL CHANGE =============== */
+
 const header = document.querySelector('#header');
 
 function headerBackgroudChange() {
@@ -20,3 +22,25 @@ function headerBackgroudChange() {
 }
 
 window.addEventListener('scroll', headerBackgroudChange);
+
+/* =============== FREE WEEK PASS AND CONTACT FORM SUBMISSIONS  =============== */
+
+const freePassForm = document.querySelector('#free-pass-form');
+const contactForm = document.querySelector('#contact-form');
+
+function formSubmission(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    this.querySelector('.form-success').style.display = 'block';
+    this.reset();
+  });
+}
+
+if (freePassForm) {
+  formSubmission(freePassForm);
+}
+
+if (contactForm) {
+  formSubmission(contactForm);
+}

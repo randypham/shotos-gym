@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
+  text-align: center;
   @include bp-md {
     background-image: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)),
       url('../img/hero-md.jpg');
@@ -14,6 +15,16 @@
   @include bp-lg {
     background-image: linear-gradient(rgba($black, 0.6), rgba($black, 0.6)),
       url('../img/hero-lg.jpg');
+  }
+
+  &.small {
+    height: 300px;
+    @include bp-md {
+      height: 350px;
+    }
+    @include bp-lg {
+      height: 400px;
+    }
   }
 
   .container {
@@ -24,7 +35,6 @@
     color: $white;
     font-size: 3rem;
     letter-spacing: 6px;
-    text-align: center;
     text-transform: uppercase;
     @include bp-sm {
       font-size: 4rem;
@@ -32,5 +42,10 @@
     @include bp-md {
       font-size: 5rem;
     }
+  }
+
+  &-btn {
+    font-size: 1.1rem;
+    margin-top: 1rem;
   }
 }
